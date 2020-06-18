@@ -1,0 +1,126 @@
+.underline {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+.amazon {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border: 0px solid transparent;
+
+}
+/*TEXTAREA*/
+.textareastyle {
+    width: 100%;
+    max-width: 570px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    border: 2px solid #000;
+    margin-left: 5px;
+    background-color: #fff;
+
+}
+/*star  from review*/
+#star-1:checked ~ section [for='star-1'] svg, #star-2:checked ~ section [for='star-1'] svg, #star-2:checked ~ section [for='star-2'] svg, #star-3:checked ~ section [for='star-1'] svg, #star-3:checked ~ section [for='star-2'] svg, #star-3:checked ~ section [for='star-3'] svg, #star-4:checked ~ section [for='star-1'] svg, #star-4:checked ~ section [for='star-2'] svg, #star-4:checked ~ section [for='star-3'] svg, #star-4:checked ~ section [for='star-4'] svg, #star-5:checked ~ section [for='star-1'] svg, #star-5:checked ~ section [for='star-2'] svg, #star-5:checked ~ section [for='star-3'] svg, #star-5:checked ~ section [for='star-4'] svg, #star-5:checked ~ section [for='star-5'] svg {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#star-1:checked ~ section [for='star-1'] svg path, #star-2:checked ~ section [for='star-1'] svg path, #star-2:checked ~ section [for='star-2'] svg path, #star-3:checked ~ section [for='star-1'] svg path, #star-3:checked ~ section [for='star-2'] svg path, #star-3:checked ~ section [for='star-3'] svg path, #star-4:checked ~ section [for='star-1'] svg path, #star-4:checked ~ section [for='star-2'] svg path, #star-4:checked ~ section [for='star-3'] svg path, #star-4:checked ~ section [for='star-4'] svg path, #star-5:checked ~ section [for='star-1'] svg path, #star-5:checked ~ section [for='star-2'] svg path, #star-5:checked ~ section [for='star-3'] svg path, #star-5:checked ~ section [for='star-4'] svg path, #star-5:checked ~ section [for='star-5'] svg path {
+    fill: #E6282B;
+    stroke: #E6282B;
+
+}
+label[for="star-null"] {
+    display: block;
+    margin: 0 auto;
+    color: #999;
+}
+label {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+label svg {
+    width: 100%;
+    height: auto;
+    fill: white;
+    stroke: #CCC;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    transition: -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+label svg path {
+    -webkit-transition: fill 200ms ease-in-out, stroke 100ms ease-in-out;
+    transition: fill 200ms ease-in-out, stroke 100ms ease-in-out;
+}
+
+label[for="star-null"] {
+    display: block;
+    margin: 0 auto;
+    color: #999;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    outline: 2px solid #f00;
+}
+
+
+
+/*buttons*/
+.button1 {
+    margin: 70px;
+
+    width: 40%;
+    height: 20%;
+    color: #fff;
+    background-color: #E6282B ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    border: 0px solid transparent;
+}
+.button2 {
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E6282B;
+    color: #fff;
+    border: 3px solid #E6282B;
+    padding-left: 20px; padding-right: 20px;
+}
+
+.button2:hover {
+    background-color: #99c767;
+    color: #fff;
+    border: 3px solid #99c767;
+}
+.buttondisabled2 {
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E6282B;
+    color: #000;
+    border: 3px solid #E6282B;
+    padding-left: 20px; padding-right: 20px;
+}
+
