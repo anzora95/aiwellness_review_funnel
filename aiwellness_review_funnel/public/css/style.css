@@ -3,6 +3,7 @@
     outline: 0;
     background: transparent;
     border-bottom: 1px solid black;
+
 }
 .amazon {
     font-size: 30px;
@@ -10,6 +11,13 @@
     font-family: 'Montserrat', sans-serif;
     border: 0px solid transparent;
 
+}
+.amazon2 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #999;
+    margin-bottom: 30px;
 }
 /*TEXTAREA*/
 .textareastyle {
@@ -70,31 +78,82 @@ label[for="star-null"] {
 }
 
 /* HIDE RADIO */
-[type=radio] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
+/*[type=radio] {*/
+/*    position: absolute;*/
+/*    opacity: 0;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*}*/
+
+/*!* IMAGE STYLES *!*/
+/*[type=radio] + button {*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*!* CHECKED STYLES *!*/
+/*[type=radio]:checked + button {*/
+/*    outline: 2px solid #f00;*/
+/*    background-color: #2fa360;*/
+/*}*/
+
+
+/*divs radiobutton*/
+/*.radio-group{*/
+/*    position: relative;*/
+/*}*/
+
+div.radio{
+    /*display:inline-block;*/
+    /*width:15px;*/
+    /*height: 15px;*/
+    /*border-radius: 100%;*/
+    /*background-color:lightblue;*/
+    /*border: 2px solid #F8FAFC;*/
+    cursor:pointer;
+    margin: 2px 0;
 }
 
-/* IMAGE STYLES */
-[type=radio] + img {
-    cursor: pointer;
+div.radio.selected div div.buttonselect{
+    border-color: #E6282B;
+    background-color: #E6282B;
+    color: #fff;
+
 }
 
-/* CHECKED STYLES */
-[type=radio]:checked + img {
-    outline: 2px solid #f00;
+div.radio.selected div div.buttonselect p{
+display: none;
+}
+
+div.radio.selected div div.buttonselect:after{
+    content: "Selected";
 }
 
 
+p.subtittle1{
+    font-family: 'Arial Black','sans-serif';
+    margin: 0;
+    font-size: large;
+}
 
 /*buttons*/
+.buttonselect {
+    margin: 10px;
+    width: 40%;
+    height: 10%;
+    /*color: #fff;*/
+    background-color: #fff ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    content: "Select";
+
+}
 .button1 {
     margin: 70px;
 
     width: 40%;
-    height: 20%;
+    height: 15%;
     color: #fff;
     background-color: #E6282B ;
     font-family: 'Montserrat', sans-serif;
@@ -124,3 +183,36 @@ label[for="star-null"] {
     padding-left: 20px; padding-right: 20px;
 }
 
+
+.button3 {
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e3173;
+    color: #fff;
+    border: 3px solid #1e3173;
+    padding-left: 20px; padding-right: 20px;
+}
+
+.button3:hover {
+    background-color: #99c767;
+    color: #fff;
+    border: 3px solid #99c767;
+}
+.button12 {
+
+    /*margin-bottom: 10px;*/
+    width: 45%;
+    background-color: #E6282B;
+    height: 10%;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    border: 0px solid transparent;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: large;
+}
+
+.button12:hover {
+    background-color: #99c767;
+    color: #FFF;
+}

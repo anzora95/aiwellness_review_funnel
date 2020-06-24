@@ -21,10 +21,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/review', function () {
-    return view('review');
+Route::get('/shipping', function () {
+    return view('shipping');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/review', 'IndexController@first_step');
+Route::post('/shipping', 'IndexController@second_step');

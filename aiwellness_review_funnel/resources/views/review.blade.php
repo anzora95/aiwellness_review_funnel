@@ -1,6 +1,30 @@
 @extends('layouts.app')
 @section('extra_links')
 
+    <!-- Alertify -->
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/alertify.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/default.min.css"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/semantic.min.css"/>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/bootstrap.min.css"/>
+
+    <!--
+        RTL version
+    -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/alertify.rtl.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/default.rtl.min.css"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/semantic.rtl.min.css"/>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/bootstrap.rtl.min.css"/>
+
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <script src="{{ asset('js/custom.js') }}" defer></script>
 @endsection
@@ -37,7 +61,7 @@
             </p>
             <div class="col-md-12 text-center">
                 <textarea disabled class="textareastyle" rows="10" style="margin-top: 25px;">
-
+                    {{$review}}
                 </textarea>
             </div>
             <!-- To be able to copy from the text we need to user the input tag **User css to change the aspect**-->
@@ -53,10 +77,10 @@
                 <button class="button2 text-uppercase" onclick="myFunction2()" id="btncopied" style="margin-right: 10px;margin-bottom: 15px;">Click to Copy</button>
 
 
-                    <button class="buttondisabled2 text-uppercase" id="amazon" onclick="timeFunction()" disabled style="margin-right: 10px;margin-bottom: 15px;" >Review us on Amazon</button>
+                    <button class="buttondisabled2 text-uppercase" id="amazon" onclick="timeFunction()"  style="margin-right: 10px;margin-bottom: 15px;" disabled>Review us on Amazon</button>
 
-                <a href="shipping.php">
-                    <button class="buttondisabled2" id="two" style="margin-top: 10px;" disabled > OKAY IT'S ON AMAZON</button>
+                <a href="/shipping">
+                    <button class="buttondisabled2" id="two" style="margin-top: 10px;" disabled> OKAY IT'S ON AMAZON</button>
                 </a></p>
 
             </p>
