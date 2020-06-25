@@ -18,7 +18,7 @@
  <form action="/review" method="post">
      @csrf
     <div class="container">
-        <div class="text-center"> <strong><h3 style="font-family: 'Arial Black','sans-serif';"> Please select the product you purchased: </h3></strong></div>
+        <div class="text-center"> <strong><h3 style="font-family: 'Montserrat','sans-serif';"> Please select the product you purchased: </h3></strong></div>
         <br>
         <div class="row text-center radio-group">
                 <div class="col-md-4 radio">
