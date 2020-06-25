@@ -32,13 +32,13 @@
 
     div.banner{
         background-image: url("img/banner-1.png");
-        background-position: 100%;
+        background-position: 40%;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         height: 100%;
-        padding: 100px 10px 100px 10px;
+        padding: 0px 0px 0px 0px;
 
     }
     .container-fluid.banner{
