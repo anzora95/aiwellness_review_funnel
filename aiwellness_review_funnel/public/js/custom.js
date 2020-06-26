@@ -1,14 +1,31 @@
 $(document).ready(function(){
     $('#amazon-order').mask('000-0000000-0000000');
+    // if($('.radio-group .radio').hasClass("selected")){
+    //
+    //     $('.radio-group .radio .selected').find("span.material-icons").removeAttr("hidden");
+    //
+    // }
+    // else {
+    //
+    //     $('.radio-group .radio').find("span.material-icons").attr("hidden");
+    //
+    // }
 });
 
 $('.radio-group .radio').click(function(){
     $(this).parent().find('.radio').removeClass('selected');
     $(this).addClass('selected');
     $('.set_data_input').val($('.selected .relative_pass .subtittle1').html());
-    // var val = $(this).attr('data-value');
-    // //alert(val);
-    // $(this).parent().find('input').val(val);
+    var elt = $(this).find("p.toogle_text").attr('for');
+    $(this).find("p.toggle_text").text("Selected");
+    $('.fa-check-circle').hide();
+    $("#" + elt).toggle();
+    // $(this).html($(this).find("p.toggle_text").html() == "Select" ? "Selected" : "Select");
+    // console.log("#"+elt);
+
+    // material-icons
+
+    // $(this).find("span").toggle();
 });
 
 
@@ -25,7 +42,7 @@ function myFunction2() {
 function timeFunction() {
     setTimeout(function myFunction3(){
         document.getElementById('two').removeAttribute('disabled');
-        $('#two').addClass('button2');
+        $('#two').addClass('button3');
     }, 5000);
 }
 
@@ -34,3 +51,10 @@ function textLength(value){
     if(value.length > maxLength) return false;
     return true;
 }
+
+// function change() // no ';' here
+// {
+//     var elem = document.getElementsByClassName("sele");
+//     if (elem.value=="Close Curtain") elem.value = "Open Curtain";
+//     else elem.value = "Close Curtain";
+// }

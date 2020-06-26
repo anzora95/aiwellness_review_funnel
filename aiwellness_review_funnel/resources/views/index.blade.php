@@ -6,6 +6,8 @@
     <script src="{{ asset('js/custom.js') }}" defer></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 @stop
 
 @section('banner')
@@ -18,54 +20,54 @@
  <form action="/review" method="post">
      @csrf
     <div class="container">
-        <div class="text-center"> <strong><h3 style="font-family: 'Montserrat','sans-serif';"> Please select the product you purchased: </h3></strong></div>
+        <div class="text-center"> <h3 style="font-family: 'Montserrat','sans-serif';"> Please select the product you purchased: </h3></div>
         <br>
         <div class="row text-center radio-group">
                 <div class="col-md-4 radio">
-                    {{ HTML::image('img/Stage1.png', 'banner1', array('style' => 'width: 60%; high: 60%; margin: 0px; ')) }}
+                    {{ HTML::image('img/Stage1.png', 'banner1', array('style' => 'width: 40%; high: 40%; margin: 0px; ')) }}
                     <div class="text-center relative_pass">
                         <p class="subtittle1">
-                            STAGE-1 IGNT
+                            STAGE-1 IGNT&trade;
                         </p>
                         <P style="font-family: 'Arial Black','sans-serif'; color: #E6282B; margin: 0; ">
                             PRE WORKOUT
                         </P>
 
                             <div class="buttonselect" style="margin: auto;">
-                                <p style="margin: 0">Select</p>
+                                <p style="margin: 0" for="q1" class="toogle_text">Select<i class="fa fa-check-circle" aria-hidden="true" id="q1" style="margin-left: 5px;"></i></p>
                             </div>
 
                     </div>
                 </div>
-                <div class="col-md-4 radio text-center" >
-                    {{ HTML::image('img/Stage2.png', 'banner1', array('style' => 'width: 60%; high: 60%; margin: 0px; ')) }}
+                <div class="col-md-4 radio text-center">
+                    {{ HTML::image('img/Stage2.png', 'banner1', array('style' => 'width: 40%; high: 40%; margin: 0px; ')) }}
                     <div class="text-center relative_pass">
                         <p class="subtittle1">
-                            STAGE-2 PRFM
+                            STAGE-2 PRFM&trade;
                         </p>
                         <P style="font-family: 'Arial Black','sans-serif'; color: #E6282B; margin: 0; ">
                             INTRA-WORKOUT
                         </P>
 
-                            <div class="buttonselect text-center" style="margin: auto">
-                                <p style="margin: 0">Select</p>
+                            <div class="buttonselect text-center" style="margin: auto;">
+                                <p style="margin: 0" for="q2" class="toogle_text">Select<i class="fa fa-check-circle" aria-hidden="true" id="q2" style="margin-left: 5px;" ></i></p>
                             </div>
 
                     </div>
                 </div>
                 <div class="col-md-4 radio">
-                    {{ HTML::image('img/Jointcap.png', 'banner1', array('style' => 'width: 60%; high: 60%; margin: 0px; ')) }}
+                    {{ HTML::image('img/Jointcap.png', 'banner1', array('style' => 'width: 40%; high: 40%; margin: 0px; ')) }}
                     <div class="text-center relative_pass">
                         <p class="subtittle1">
-                            JOINTCAP X4
+                            JOINTCAP X4&trade;
                         </p>
                         <P style="font-family: 'Arial Black','sans-serif'; color: #E6282B; margin: 0; ">
                             JOINT HEALTH SUPPORT
                         </P>
 
-                                    <div class="buttonselect" style="margin: auto">
-                                        <p style="margin: 0">Select</p>
-                                    </div>
+                        <div class="buttonselect" style="margin: auto;">
+                            <p style="margin: 0" for="q3" class="toogle_text">Select<i class="fa fa-check-circle" aria-hidden="true" id="q3" style="margin-left: 5px;"></i></p>
+                        </div>
 
 
                     </div>
@@ -79,7 +81,7 @@
     <br>
     <div class="container">
     <div class="text-center">
-        <h4 class="form-question text-center" style="font-family: 'Arial', 'sans-serif'">
+        <h4 class="form-question text-center">
             What is your Amazon order #?
         </h4>
         <div class="form-group text-center">
@@ -92,7 +94,7 @@
     <div class="container">
 
         <!-- End Input with Masking -->
-        <h3 class="text-center sans" style="color: #333333;font-weight:300; font-size: 22px; padding-bottom:5px; ">Your overall satisfaction rating: </h3>
+        <h3 class="text-center sans form-overall" style="color: #333333;font-weight:300; padding-bottom:5px; ">Your overall satisfaction rating: </h3>
 
         <!-- Star System -->
         <div class="text-center underline" style="margin-top: 30px; ">
@@ -127,10 +129,10 @@
             <br>
             <br>
 
-            <p class="text-center" style="padding-top:0px; color: #333333;font-weight:300; font-size: 22px;">Tell us about your expirience with the product. <br>Please include details about how it's benefiting you</p>
+            <p class="text-center" style="padding-top:0px; color: #333333;font-weight:300; font-size: 22px; font-family: 'Montserrat','sans-serif'">Tell us about your experience with the product. <br>Please include details about how it's benefiting you.</p>
 
             <div class="text-center">
-                <textarea id="txtarea" name="review" class="textareastyle" rows="10" style="margin-top:5px; max-width:100%; width:570px;"></textarea>
+                <textarea id="txtarea" name="review" class="textareastyle" rows="10" style="margin-top:5px; max-width:100%; width:595px;"></textarea>
             </div>
 
             <br>
@@ -138,9 +140,9 @@
 
             <p class="text-center" >
 
-                <button  id="two"class="button1 text-center">Get My FREE Creatine </button>
+                <button  id="two"class="button25 text-center">Get My FREE Creatine <i class="fa fa-long-arrow-right" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i> </button>
             </p>
-{{--            <icon class="material-icons" style="font-size: 45px;">arrow_right_alt</icon>--}}
+
 
         </div>
 
@@ -158,5 +160,10 @@
 
     $('input[name="order"]').mask('000-0000000-0000000');
 </script>
+
+@endsection
+@section('footer')
+
+    @include('banners.footer')
 
 @endsection
