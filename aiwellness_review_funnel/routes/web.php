@@ -28,5 +28,5 @@ Route::get('/shipping', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/review', 'IndexController@first_step');
+Route::get('/review/{review}', 'IndexController@first_step');
 Route::post('/shipping', 'IndexController@second_step');

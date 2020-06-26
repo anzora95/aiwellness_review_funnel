@@ -29,6 +29,7 @@
     <script src="{{ asset('js/custom.js') }}" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 @endsection
 @section('banner')
 
@@ -76,8 +77,8 @@
                 </textarea>
             </div>
             <!-- To be able to copy from the text we need to user the input tag **User css to change the aspect**-->
-            <input type="text"  value="" style="opacity: 0.0;
-  filter: alpha(opacity=00); /* For IE8 and earlier */" id="myInput" >
+            <input type="text"  value="{{$review}}" style="opacity: 0.0;
+  filter: alpha(opacity=00); " id="myInput">
             <!-- Que es esto de arriba? Lo podemos quitar ^? O esconder porfa? -->
 
             <p class="form-overall text-center">
@@ -100,6 +101,8 @@
     </div> <!-- End of Container -->
     <div class="container-fluid">
         <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-sm-12 text-center">
+                <div class="row ">
             <div class="col-lg-4 col-sm-12 text-center">
                 <button class="button2 " onclick="myFunction2()" id="btncopied" style="margin-right: 10px;margin-bottom: 15px;">Click to Copy <i class="fa fa-files-o" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i>
                 </button>
@@ -112,6 +115,8 @@
 {{--                <a href="/shipping">--}}
                     <button class="buttondisabled2" id="two" style="margin-right: 10px" disabled>My Review is on Amazon</button>
 {{--                </a>--}}
+            </div>
+                </div>
             </div>
         </div>
     </div>

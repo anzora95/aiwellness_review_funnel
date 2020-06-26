@@ -17,8 +17,8 @@
 @endsection
 
 @section('content')
- <form action="/review" method="post">
-     @csrf
+{{-- <form method="get">--}}
+{{--     @csrf--}}
     <div class="container">
         <div class="text-center"> <h3 style="font-family: 'Montserrat','sans-serif';"> Please select the product you purchased: </h3></div>
         <br>
@@ -85,7 +85,7 @@
             What is your Amazon order #?
         </h4>
         <div class="form-group text-center">
-            <input style="max-width:100%;"   type="text" name="order" class="text-center amazon underline" id="amazon-order" placeholder="___-_______-______" maxlength="17" >
+            <input style="max-width:100%;"   type="text" name="order" class="text-center amazon " id="amazon-order" placeholder="___-_______-______" maxlength="17" required>
 
         </div>
     </div>
@@ -97,7 +97,7 @@
         <h3 class="text-center sans form-overall" style="color: #333333;font-weight:300; padding-bottom:5px; ">Your overall satisfaction rating: </h3>
 
         <!-- Star System -->
-        <div class="text-center underline" style="margin-top: 30px; ">
+        <div class="text-center " style="margin-top: 30px; ">
             <input type="radio" class="hidden" name="stars" id="star-null" hidden/>
             <input type="radio" class="hidden" name="stars" value="1" id="star-1" hidden/>
             <input type="radio" class="hidden" name="stars" value="2" id="star-2" hidden/>
@@ -132,7 +132,7 @@
             <p class="text-center" style="padding-top:0px; color: #333333;font-weight:300; font-size: 22px; font-family: 'Montserrat','sans-serif'">Tell us about your experience with the product. <br>Please include details about how it's benefiting you.</p>
 
             <div class="text-center">
-                <textarea id="txtarea" name="review" class="textareastyle" rows="10" style="margin-top:5px; max-width:100%; width:595px;"></textarea>
+                <textarea id="txtarea" name="review" class="textareastyle" rows="10" style="margin-top:5px; max-width:100%; width:595px;" required></textarea>
             </div>
 
             <br>
@@ -140,7 +140,7 @@
 
             <p class="text-center" >
 
-                <button  id="two"class="button25 text-center">Get My FREE Creatine <i class="fa fa-long-arrow-right" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i> </button>
+                <button  id="two"class="button25 text-center" onclick="reboot()">Get My FREE Creatine <i class="fa fa-long-arrow-right" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i> </button>
             </p>
 
 
@@ -148,12 +148,14 @@
 
     </div>
 
-</form>
+{{--</form>--}}
 
 <br>
 <br>
 
 <script>
+
+
 
 
 

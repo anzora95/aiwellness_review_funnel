@@ -34,7 +34,13 @@ function myFunction2() {
     document.getElementById('btncopied').innerText = 'Copied!';
     copyText.select();
     document.execCommand("copy");
-    alertify.alert("Copied the text: " + copyText.value);
+
+    Swal.fire({
+        text:" "+ copyText.value,
+        title: " ",
+        confirmButtonColor:'#E6282B',
+    });
+
     document.getElementById('amazon').removeAttribute('disabled');
     $('#amazon').addClass('button3');
 }
@@ -52,9 +58,7 @@ function textLength(value){
     return true;
 }
 
-// function change() // no ';' here
-// {
-//     var elem = document.getElementsByClassName("sele");
-//     if (elem.value=="Close Curtain") elem.value = "Open Curtain";
-//     else elem.value = "Close Curtain";
-// }
+function reboot() {
+    var review = document.getElementById("txtarea").value;
+    window.location.replace("/review/"+review+"/");
+}
