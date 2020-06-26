@@ -1,5 +1,5 @@
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-<div class="container-fluid banner" style="margin-top: 1%; padding: 0; height: 170%; width: 100%">
+<div class="container-fluid banner" style="margin-top: 1%; padding: 0; height: 140%; width: 100%">
 
     <div class="row banner-row">
 
@@ -7,10 +7,10 @@
 
             {{ HTML::image('img/logo_02.png', 'logo', array('style' => 'width: 15%; margin: 0px; margin-left: 3%; ')) }}
             <h3 style="margin: 0px; margin-left: 3% ;" class="subtitle1">GET YOUR</h3>
-            <h4 style="margin: 0px; margin-left: 3% ; margin-top: -4%;" class="subtittle2">FREE </h4>
-            <h4 style="margin: 0px; margin-left: 3% ; margin-top: -4%" class="subtittle2">CREATINE</h4>
+            <h4 style="margin: 0px; margin-left: 3% ;  margin-top: -5px;" class="subtittle2">FREE </h4>
+            <h4 style="margin: 0px; margin-left: 3% ;  margin-top: -5px;" class="subtittle2">CREATINE</h4>
 
-            <h4 style="margin: 0px; margin-left: 3% ; font-family: 'Montserrat','sans-serif'; font-weight: 300">after actively taking our product for at least 7 days.* <br> No Credit Card Required - Free Shipping!</h4>
+            <h4 style="margin: 0px; margin-left: 3% ;  font-family: 'Montserrat','sans-serif'; font-weight: 300">after actively taking our product for at least 7 days.* <br> No Credit Card Required - Free Shipping!</h4>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 text-center">
 
@@ -33,14 +33,10 @@
         </div>
 {{--    </div>--}}
 </div>
-
-
-
-
 <style>
 
     div.banner{
-        background-image: url("img/banner-12.png");
+        background-image: url("img/banner-1.png");
         background-position: 50%;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -52,8 +48,8 @@
 
     }
     .container-fluid.banner{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
         margin: 0px;
     }
 
@@ -66,7 +62,6 @@
     .banner-row{
         max-width: 100%;
         height: 590px;
-        /*display: flex;*/
 
         justify-content: center;
     }
