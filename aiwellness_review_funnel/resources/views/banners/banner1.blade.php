@@ -1,5 +1,16 @@
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-<div class="container-fluid banner" style="margin-top: 1%; padding: 0; height: 140%; width: 100%">
+<div id="banner-mobil" class="container-fluid">
+    <div class="container text-center">
+        <h1>Mobil version here</h1>
+        <h2>Mobil version here</h2>
+        <h3>Mobil version here</h3>
+        <h4>Mobil version here</h4>
+        <h5>Mobil version here</h5>
+        <h6>Mobil version here</h6>
+
+    </div>
+</div>
+<div id="index-banner" class="container-fluid banner" style="margin-top: 1%; padding: 0; height: 140%; width: 100%">
 {{--    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">--}}
 
     <div class="row banner-row">
