@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5551345-6f61-4bd3-8e41-edf4d93c2891" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/aiwellness_review_funnel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aiwellness_review_funnel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/banners/banner1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/banners/banner1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/banners/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/banners/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,43 +26,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>banner</find>
-      <find>sha</find>
-      <find>what is</find>
-      <find>get my</find>
-      <find>footer-bottom</find>
-      <find>button1</find>
-      <find>expi</find>
-      <find>sanscondensed</find>
-      <find>cli</find>
-      <find>textareastyle</find>
-      <find>question</find>
-      <find>Here's what you said:</find>
-      <find>disable</find>
-      <find>ama</find>
-      <find>click to</find>
-      <find>amazon</find>
-      <find>button2</find>
-      <find>texta</find>
-      <find>please share</find>
-      <find>myInput</find>
-      <find>form-ove</find>
-      <find>section</find>
-      <find>under</find>
-      <find>lin</find>
-      <find>underlin</find>
-      <find>amazon2</find>
-      <find>border</find>
-      <find>border-</find>
-      <find>border-bottom</find>
-      <find>container-fluid</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -227,7 +190,7 @@
       <workItem from="1593012790028" duration="21086000" />
       <workItem from="1593099079540" duration="32336000" />
       <workItem from="1593184407192" duration="1540000" />
-      <workItem from="1593277869449" duration="3347000" />
+      <workItem from="1593277869449" duration="6193000" />
     </task>
     <servers />
   </component>
