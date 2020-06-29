@@ -2,7 +2,7 @@
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 1px solid black;
+    border-bottom: 0px solid black;
 
 }
 .amazon {
@@ -13,11 +13,13 @@
 
 }
 .amazon2 {
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     border: 1px solid #999;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    height: 40px;
+    padding-left: 20px;
 }
 /*TEXTAREA*/
 .textareastyle {
@@ -229,7 +231,7 @@ p.subtittle1{
 }
 
 .button12:hover {
-    background-color: #99c767;
+    background-color: #000;
     color: #FFF;
 }
 
@@ -311,5 +313,24 @@ i.fa-check-circle{
     text-align: center;
     position: absolute;
     padding: 30px 0 30px 0;
+
+}
+
+/*titles */
+.secondtittle{
+
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Montserrat','sans-serif';
+    font-weight: normal;
+
+}
+
+.over_botton{
+
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Montserrat','sans-serif';
+    font-weight: normal;
 
 }

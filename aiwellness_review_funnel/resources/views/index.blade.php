@@ -8,6 +8,7 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 @stop
 
 @section('banner')
@@ -17,8 +18,8 @@
 @endsection
 
 @section('content')
-{{-- <form method="get">--}}
-{{--     @csrf--}}
+ <form method="post" action="/review/" onsubmit="return validate()" >
+     @csrf
     <div class="container">
         <div class="text-center"> <h3 style="font-family: 'Montserrat','sans-serif';"> Please select the product you purchased: </h3></div>
         <br>
@@ -26,9 +27,7 @@
                 <div class="col-md-4 radio">
                     {{ HTML::image('img/Stage1.png', 'banner1', array('style' => 'width: 40%; high: 40%; margin: 0px; ')) }}
                     <div class="text-center relative_pass">
-                        <p class="subtittle1">
-                            STAGE-1 IGNT&trade;
-                        </p>
+                        <p class="subtittle1">STAGE-1 IGNT&trade;</p>
                         <P style="font-family: 'Arial Black','sans-serif'; color: #E6282B; margin: 0; ">
                             PRE WORKOUT
                         </P>
@@ -42,9 +41,7 @@
                 <div class="col-md-4 radio text-center">
                     {{ HTML::image('img/Stage2.png', 'banner1', array('style' => 'width: 40%; high: 40%; margin: 0px; ')) }}
                     <div class="text-center relative_pass">
-                        <p class="subtittle1">
-                            STAGE-2 PRFM&trade;
-                        </p>
+                        <p class="subtittle1">STAGE-2 PRFM&trade;</p>
                         <P style="font-family: 'Arial Black','sans-serif'; color: #E6282B; margin: 0; ">
                             INTRA-WORKOUT
                         </P>
@@ -58,9 +55,9 @@
                 <div class="col-md-4 radio">
                     {{ HTML::image('img/Jointcap.png', 'banner1', array('style' => 'width: 40%; high: 40%; margin: 0px; ')) }}
                     <div class="text-center relative_pass">
-                        <p class="subtittle1">
-                            JOINTCAP X4&trade;
-                        </p>
+
+                        <p class="subtittle1">JOINTCAP X4&trade;</p>
+
                         <P style="font-family: 'Arial Black','sans-serif'; color: #E6282B; margin: 0; ">
                             JOINT HEALTH SUPPORT
                         </P>
@@ -97,7 +94,7 @@
         <h3 class="text-center sans form-overall" style="color: #333333;font-weight:300; padding-bottom:5px; ">Your overall satisfaction rating: </h3>
 
         <!-- Star System -->
-        <div class="text-center " style="margin-top: 30px; ">
+        <div class="text-center " style="margin-top: 30px;">
             <input type="radio" class="hidden" name="stars" id="star-null" hidden/>
             <input type="radio" class="hidden" name="stars" value="1" id="star-1" hidden/>
             <input type="radio" class="hidden" name="stars" value="2" id="star-2" hidden/>
@@ -140,7 +137,7 @@
 
             <p class="text-center" >
 
-                <button  id="two"class="button25 text-center" onclick="reboot()">Get My FREE Creatine <i class="fa fa-long-arrow-right" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i> </button>
+                <button  id="two"class="button25 text-center" >Get My FREE Creatine <i class="fa fa-long-arrow-right" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i> </button>
             </p>
 
 
@@ -148,7 +145,7 @@
 
     </div>
 
-{{--</form>--}}
+</form>
 
 <br>
 <br>

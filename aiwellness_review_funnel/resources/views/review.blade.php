@@ -41,6 +41,8 @@
 @section('content')
     <br>
     <br>
+    <form action="/shipping" method="post">
+        @csrf
     <div class="container" style="padding-top: 0px; padding-bottom: 0px;margin-top:-40px;">
         <div class="row"  style="">
             <div class="col-lg-12" style="text-align: left">
@@ -65,6 +67,7 @@
             </div>
 
         </div>
+
         <div class="col-sm-12 col-md-8 offset-md-2">
 
             <p class="form-question text-center" style="font-size: 25px;">
@@ -104,22 +107,23 @@
             <div class="col-lg-8 offset-lg-2 col-sm-12 text-center">
                 <div class="row ">
             <div class="col-lg-4 col-sm-12 text-center">
-                <button class="button2 " onclick="myFunction2()" id="btncopied" style="margin-right: 10px;margin-bottom: 15px;">Click to Copy <i class="fa fa-files-o" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i>
+                <button class="button2 " type="button" onclick="myFunction2()" id="btncopied" style="margin-right: 10px;margin-bottom: 15px;">Click to Copy <i class="fa fa-files-o" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i>
                 </button>
             </div>
             <div class="col-lg-4 col-sm-12 text-center">
-                <button class="buttondisabled2" id="amazon" onclick="timeFunction()"  style="margin-right: 10px;margin-bottom: 15px;" disabled>Review Us On Amazon <i class="fa fa-long-arrow-right" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i> </button>
+                <button class="buttondisabled2 "  type="button" id="amazon" onclick="timeFunction()"  style="margin-right: 10px;margin-bottom: 15px;" disabled>Review Us On Amazon <i class="fa fa-long-arrow-right" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i> </button>
 
             </div>
             <div class="col-lg-4 col-sm-12 text-center">
 {{--                <a href="/shipping">--}}
-                    <button class="buttondisabled2" id="two" style="margin-right: 10px" disabled>My Review is on Amazon</button>
+                    <button class="buttondisabled2" id="two" style="margin-right: 10px" disabled>My Review Is On Amazon</button>
 {{--                </a>--}}
             </div>
                 </div>
             </div>
         </div>
     </div>
+    </form>
 
     <p class="text-center">
 

@@ -62,3 +62,30 @@ function reboot() {
     var review = document.getElementById("txtarea").value;
     window.location.replace("/review/"+review+"/");
 }
+
+function validate() {
+
+    var txta = document.getElementById('txtarea').value;
+    if (txta.trim().length == 0) {
+
+        Swal.fire({
+            text:" Please leave a review about the product!",
+            title: " ",
+            confirmButtonColor:'#E6282B',
+        });
+
+        return false;
+    } else {
+        if (txta.trim().length < 20) {
+            Swal.fire({
+                text:"Your review should be at least 100 characters long.",
+                title: " ",
+                confirmButtonColor:'#E6282B',
+            });
+
+            return false; // keep form from submitting
+
+        }
+
+    }
+}

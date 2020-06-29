@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Aiwellness extends Model
 {
 
-    protected $table = 'Aiwellness';
+    protected $table = 'aiwellnesses';
 
     public $primaryKey = 'id';
 
