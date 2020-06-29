@@ -43,7 +43,9 @@ class first_step extends Notification
         $firststep = new MailMessage;
         $firststep->subject('Dear IT Manager First step for order #:')
             ->from('info@aiwellness.com', 'AIwellness')
-            ->line('Test mail for firstep');
+            ->product_name("Shut eye")
+            ->fname("Jose")
+            ->order('101-0101010-1010101');
 
         return ($firststep);
     }

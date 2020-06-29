@@ -31,13 +31,13 @@ class IndexController extends Controller
 //        $arr=[$user->name,0,$email_challenged->name,$tittle]; //DATA FOR EMAIL TEMPLATE CHALLENGER
 
         Notification::route('mail', 'jose@mvagency.co')
-            ->notify(new first_step()); //EMAIL FOR CHALLENGED
+            ->notify(new first_step()); //EMAIL FOR JOSE
 
         Notification::route('mail', 'diego@mvagency.co')
-            ->notify(new first_step()); //EMAIL FOR CHALLENGED
+            ->notify(new first_step()); //EMAIL FOR DIEGO
 
         Notification::route('mail', 'ariel@mvagency.co')
-            ->notify(new first_step()); //EMAIL FOR CHALLENGED
+            ->notify(new first_step()); //EMAIL FOR ARIEL
 
         return view('review')->with('review',$review);
 
@@ -62,10 +62,10 @@ class IndexController extends Controller
         $zip=$_POST['zip'];
 
         $neworder = new Aiwellness;
-         $neworder->Product=$request->session()->get('product');        //ACCSESSING TO SESSION DATA AND STORE THIS DATA
-         $neworder->Rating=$request->session()->get('stars');        //ACCSESSING TO SESSION DATA AND STORE THIS DATA
-         $neworder->Review=$request->session()->get('review');        //ACCSESSING TO SESSION DATA AND STORE THIS DATA
-         $neworder->OrderNumber=$request->session()->get('order');        //ACCSESSING TO SESSION DATA AND STORE THIS DATA
+        $neworder->Product=$request->session()->get('product');        //ACCSESSING TO SESSION DATA AND STORE THIS DATA
+        $neworder->Rating=$request->session()->get('stars');        //ACCSESSING TO SESSION DATA AND STORE THIS DATA
+        $neworder->Review=$request->session()->get('review');        //ACCSESSING TO SESSION DATA AND STORE THIS DATA
+        $neworder->OrderNumber=$request->session()->get('order');        //ACCSESSING TO SESSION DATA AND STORE THIS DATA
         $neworder->Email=$email;
         $neworder->First_Name=$fname;
         $neworder->Last_Name=$lname;

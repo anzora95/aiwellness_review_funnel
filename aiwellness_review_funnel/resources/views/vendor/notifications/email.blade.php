@@ -13,7 +13,6 @@
 {{-- Intro Lines --}}
 @foreach ($introLines as $line)
 {{ $line }}
-
 @endforeach
 
 {{-- Action Button --}}
@@ -39,13 +38,21 @@
 
 @endforeach
 
-{{-- Salutation --}}
-@if (! empty($salutation))
-{{ $salutation }}
-@else
-@lang('Regards'),<br>
-{{ config('app.name') }}
-@endif
+<table >
+    <tr>
+        <th>Full Name</th>
+        <th>Product</th>
+        <th>Order</th>
+{{--        <th>email</th>--}}
+    </tr>
+    <tr>
+        <td>no dinamic template</td>
+        <td>Stage-1 IGNT </td>
+        <td>113-1936606-5088219</td>
+{{--        <td>nodinamictemplate@mvagency.co</td>--}}
+
+    </tr>
+</table>
 
 {{-- Subcopy --}}
 @isset($actionText)

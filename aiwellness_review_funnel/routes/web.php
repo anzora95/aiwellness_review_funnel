@@ -31,3 +31,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/review', 'IndexController@first_step');
 Route::post('/shipping', 'IndexController@second_step');
 Route::post("/discounts",'IndexController@last_step');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/data', 'HomeController@index');
+
+
+Route::middleware(['auth'])->group(function (){
+
+    Route::get('/data', 'TableController@datatable');
+
+
+});
