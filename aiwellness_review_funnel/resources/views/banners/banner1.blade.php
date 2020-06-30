@@ -9,17 +9,17 @@
 
     </div>
 </div>
-<div style="background-color: #e5272d; color: #ffffff; " class="container-fluid">
+<div style="background-color: #e5272d; color: #ffffff; " class="container-fluid top-shape">
     <h1 style="margin-bottom: 0px !important;">Top image here</h1>
 </div>
-<div style="background-color: #e5272d; color: #ffffff; padding-top: 20px; padding-bottom: 20px;" class="container-fluid text-center">
+<div style="background-color: #e5272d; color: #ffffff; padding-top: 20px; padding-bottom: 20px;" class="container-fluid text-center middle">
     <h4 style="font-family: 'Montserrat','sans-serif';">Share your HONEST feedback with us and we'll send you a FREE <br> sample-sized bottle of our best-selling product!</h4>
     <p style="text-align: justify !important;">*Following Conditions Apply: Customer agrees to share their honest feedback with us on our product after actively using for at
         <br> least 7 br days. Limited to one free sample-sized bottle per product review, per household. The sample-sized product offering will
         <br> be selected by AI Wellness. Offer valid while supplies last. This offer is NOT contingent on leaving a review on any website.
         <br>Product must have been purchased through Amazon.com or AIwellness.com.</p>
 </div>
-<div style="background-color: #e5272d; color: #ffffff;" class="container-fluid">
+<div style="background-color: #e5272d; color: #ffffff;" class="container-fluid bottom-shape">
     <h1>bottom image here</h1>
 </div>
 <div id="index-banner" class="container-fluid banner" style="margin-top: 1%; padding: 0; height: 140%; width: 100%">

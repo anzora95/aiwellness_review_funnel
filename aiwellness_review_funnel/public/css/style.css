@@ -1,3 +1,10 @@
+
+@font-face {
+    font-family: Geomanist;
+    src: url(../Geomanist-Regular-Webfont/geomanist-regular-webfont.woff);
+}
+
+
 .underline {
     border: 0;
     outline: 0;
@@ -13,11 +20,14 @@
 
 }
 .amazon2 {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid #999;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Geomanist';
+    border: 2px solid #d4d4d4;
     margin-bottom: 30px;
+    padding-left: 35px;
+    height: 60px;
+    color: #ababab !important;
 }
 /*TEXTAREA*/
 .textareastyle {
@@ -223,7 +233,7 @@ p.subtittle1{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     border: 0px solid transparent;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 70px;
     font-size: large;
 }
@@ -318,11 +328,35 @@ i.fa-check-circle{
     #banner-mobil{
         display: none !important;
     }
+    .middle{
+        display: none;
+    }
+    .top-shape{
+        display: none;
+    }
+    .bottom-shape{
+        display: none;
+    }
+    #f-section-mobil{
+        display: none;
+    }
 }
 
 /*Mobil version*/
 
 @media only screen and (max-width: 600px) {
+    .spacer-desktop{
+        display: none;
+    }
+    .form-overall{
+
+        font-family: "Montserrat","sans-serif";
+        font-size: 20px;
+
+    }
+    #f-section-desktop{
+        display: none;
+    }
     #index-banner{
         display: none !important;
     }
@@ -356,4 +390,8 @@ font-size: 40px;
         font-size: 20px;
         border: 0px solid transparent;
     }
+}
+
+.py-4{
+    padding-top: 0rem !important;
 }

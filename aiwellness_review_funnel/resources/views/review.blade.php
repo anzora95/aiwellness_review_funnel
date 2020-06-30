@@ -39,9 +39,11 @@
 {{--    4 y 5  van a amzon  3 solo guardada--}}
 @endsection
 @section('content')
+<div class="spacer-desktop">
     <br>
     <br>
-    <div class="container" style="padding-top: 0px; padding-bottom: 0px;margin-top:-40px;">
+</div>
+    <div id="f-section-desktop" class="container" style="padding-top: 0px; padding-bottom: 0px;margin-top:-40px;">
         <div class="row"  style="">
             <div class="col-lg-12" style="text-align: left">
             <h2 class="" style="color: #000000; font-weight: 500; font-size: 43px; padding-top: 0px; margin-bottom: 20px; font-family: 'Montserrat','sans-serif';">Please Share Your Review</h2>
@@ -51,10 +53,16 @@
             </div>
         </div>
     </div>
+    <div id="f-section-mobil"  class="col-sm-12 col-md-8 offset-md-2 text-center">
+        <h2 class="" style="color: #000000; font-weight: 500; font-size: 33px; padding-top: 0px; margin-bottom: 20px; font-family: 'Montserrat','sans-serif';">Please Share Your Review</h2>
+        <!-- <p class="text-center sans" style="color: #FFF;  font-weight: 700;font-size: 35px;">PLEASE SHARE YOUR REVIEW ON AMAZON</p> -->
+        <p class="" style="color: #000000; font-size: 20px; font-family: 'Montserrat','sans-serif'; font-weight: normal;">Sharing your review helps us pursue our mission to develop the best
+             natural supplements products possible.*</p>
+    </div>
 
     <!-- START OF FORM -->
 
-    <div class="container-fluid" style="padding: 30px 0px; ">
+    <div class="container-fluid" >
         <div class="container text-center">
             <div class="row">
 

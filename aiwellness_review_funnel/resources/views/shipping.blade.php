@@ -15,60 +15,73 @@
 
 
 
-    <div class="container-fluid" style="padding: 0px 0px; background-color: #FFF;">
+    <div class="container-fluid" style="padding: 30px 0px 0px 0px; background-color: #FFF;">
 
-        <div class="row">
-
-        <div style="max-width:100%;" class="text-center col-lg-6 offset-lg-3" style="padding-bottom: 70px;">
-        {{ HTML::image('img/steps2.png', 'step2', array('style' => 'width: 80%; high: 80%; margin: 0px; ')) }}
-
-
-            <!-- START OF NEW FORM -->
-
-            <form action="" onsubmit="return validateshipping()" method="POST">
-                <p class="form-question" style="margin-top:60px; font-family: 'Arial Black','sans-serif'; font-size: 22px;">
-                    Where do we send your free sample?
-                </p>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">
-                        <input style="width:100%;" type="text" name="fName" class="amazon2 underline" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '').replace(/(\.*)\./g, '$1');" id="fName" placeholder="First Name" required>
-                    </div>
-                    <div class="col-md-6">
-                        <input style="width:100%;" type="text" name="lName" class="amazon2 underline" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '').replace(/(\.*)\./g, '$1');" id="lName" placeholder="Last Name" required>
-                    </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-sm-12">
+                    {{ HTML::image('img/steps2.png', 'step2', array('style' => 'width: 100%; high: 80%; margin: 0px; ')) }}
                 </div>
-                <input style="width:100%;" type="text" name="email" class="amazon2 underline" id="amazon-ordermail" placeholder="Email" required>
-
-                <input style="width:100%;" type="text" id="sAddress1" name="sAddress1" class="amazon2 underline"  placeholder="Address 1" required>
-                <input style="width:100%;" type="text" name="sAddress2" class="amazon2 underline" id="amazon-order" placeholder="Addres 2" required>
-                <input style="width:100%;" type="text" id="route" name="route" class="amazon2 underline"  placeholder="Route" title="Add unit number if applicable" data-toggle="tooltip" data-placement="top" rel="txtTooltip" hidden>
-                <input style="width:100%;" type="text" id="street_number" name="stree_number" class="amazon2 underline"  placeholder="Street Number " title="Add unit number if applicable" data-toggle="tooltip" data-placement="top" rel="txtTooltip" hidden>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <input style="width:100%;" type="text" name="city" class="amazon2 underline" id="locality" placeholder="City">
-                    </div>
-                    <div class="col-md-4">
-                        <input id="administrative_area_level_1" name="state" class="amazon2 underline" style="margin-top:5px; padding-bottom:1px; border-bottom:1px #000 solid; max-width:100%;" required>
-
-{{--                        <?php include("src/includes/states.php");?> <!--Lista de Estados (src/includes/states)-->--}}
-
-                        </input>
-                    </div>
-                    <div class="col-md-4">
-                        <input  style="width:100%;" type="text" name="zip" class="amazon2 underline" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\.*)\./g, '$1');"  id="postal_code" pattern=".{5,5}"maxlength="5" placeholder="Zip"required>
-                    </div>
-                </div>
-                <!-- <input  type="submit" name="send" value="Submit" required/> -->
-
-                <div class="text-center">
-                    <button class="button12 text-center">Send My Free Sample</button>
-                </div>
-
+            </div>
         </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 offset-md-2" >
+
+                {{--        <div style="max-width:100%;" class="text-center col-lg-6 offset-lg-3" style="padding-bottom: 70px;">--}}
+
+
+
+                <!-- START OF NEW FORM -->
+
+                    <form action="" onsubmit="return validateshipping()" method="POST">
+                        <p class="form-question" style="margin-top:30px; font-family: 'Arial Black','sans-serif'; font-size: 32px;">
+                            Where do we send your free sample?
+                        </p>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input style="width:100%;" type="text" name="fName" class="amazon2 underline" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '').replace(/(\.*)\./g, '$1');" id="fName" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input style="width:100%;" type="text" name="lName" class="amazon2 underline" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '').replace(/(\.*)\./g, '$1');" id="lName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <input style="width:100%;" type="text" name="email" class="amazon2 underline" id="amazon-ordermail" placeholder="Email" required>
+
+                        <input style="width:100%;" type="text" id="sAddress1" name="sAddress1" class="amazon2 underline"  placeholder="Address 1" required>
+                        <input style="width:100%;" type="text" name="sAddress2" class="amazon2 underline" id="amazon-order" placeholder="Addres 2" required>
+                        <input style="width:100%;" type="text" id="route" name="route" class="amazon2 underline"  placeholder="Route" title="Add unit number if applicable" data-toggle="tooltip" data-placement="top" rel="txtTooltip" hidden>
+                        <input style="width:100%;" type="text" id="street_number" name="stree_number" class="amazon2 underline"  placeholder="Street Number " title="Add unit number if applicable" data-toggle="tooltip" data-placement="top" rel="txtTooltip" hidden>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input style="width:100%;" type="text" name="city" class="amazon2 underline" id="locality" placeholder="City">
+                            </div>
+                            <div class="col-md-2">
+                                <input id="administrative_area_level_1" name="state" class="amazon2 underline" placeholder="State" style="padding-bottom:1px;  max-width:100%;" required>
+
+                                    {{--                        <?php include("src/includes/states.php");?> <!--Lista de Estados (src/includes/states)-->--}}
+
+                                </input>
+                            </div>
+                            <div class="col-md-4">
+                                <input  style="width:100%;" type="text" name="zip" class="amazon2 underline" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\.*)\./g, '$1');"  id="postal_code" pattern=".{5,5}"maxlength="5" placeholder="Zip"required>
+                            </div>
+                        </div>
+                        <!-- <input  type="submit" name="send" value="Submit" required/> -->
+
+                        <div class="text-center">
+                            <button class="button12 text-center">Send My Free Sample</button>
+                        </div>
+
+
+                        {{--        </div>--}}
+                    </form>
+                </div>
+            </div>
         </div>
-        </form>
+
 
         <!-- FORM END -->
 
