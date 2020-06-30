@@ -151,12 +151,191 @@
 
 <script>
 
-
-
-
-
-
     $('input[name="order"]').mask('000-0000000-0000000');
+
+    $(document).ready(function() {
+
+        console.log("Despues de la funcion");
+        $("#amazon-order").on("input",function(e) {
+            var length = this.value.length;
+            var global_order= this.value;
+            /* if (length == 19) { */
+            /* e.preventDefault(); */
+            /* alertify.alert("not allow more than 11 character"); */
+            /* xmlhttp.open()
+            console.log(this.value); */
+            if (length != 19 ) {
+                /* console.log(this.value.length); */
+                return;
+            } else {
+                if (window.XMLHttpRequest) {
+                    // code for IE7+, Firefox, Chrome, Opera, Safarid
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+
+
+                    if (this.readyState == 4 && this.status == 200) {
+                        /* document.getElementById("txtHint").innerHTML = this.responseText; */
+
+                        var foo = this.responseText;
+                        console.log(this.responseText);
+                        var order= this.value;
+
+
+
+                        switch (foo.trim()){
+                            // case "1":
+                            // document.getElementById("valida").value = "1";
+                            // break;
+                            // case "0":
+                            //   Swal.fire({
+                            //   text: 'Please check your order number and try again later!',
+                            //   footer: '<a class="clickable" onclick="notworkingcodesender()" >Order number not working?</a>',
+                            // });
+                            // document.getElementById("valida").value = "0";
+                            // break;
+                            case "2":
+                                alertify.alert("Order number already used!");
+                                document.getElementById("valida").value = "2";
+                                retry=0;
+                                break;
+                            // case "3":
+                            // alertify.alert("Our team recommends to use GoBiotix products at least for 7 days before reviewing!");
+                            // document.getElementById("valida").value = "3";
+                            // break;
+                            default: //CASO DEFAULT
+
+                                // var retry=0;
+                                xmlhttp.onreadystatechange = function() {
+
+                                    // do {
+
+
+                                    if (this.readyState == 4 && this.status == 200) {
+                                        /* document.getElementById("txtHint").innerHTML = this.responseText; */
+
+                                        var foo2 = this.responseText;
+                                        console.log(this.responseText);
+
+                                        switch (foo2.trim()){
+                                            case "1":
+                                                document.getElementById("valida").value = "1";
+                                                retry=0;
+                                                break;
+                                            case "0":
+                                                Swal.fire({
+                                                    text: 'Please check your order number and try again later!',
+                                                    footer: '<a class="clickable" onclick="notworkingcodesender()" >Order number not working?</a>',
+                                                });
+                                                document.getElementById("valida").value = "0";
+                                                retry=0;
+                                                break;
+                                            case "2":
+                                                alertify.alert("Order number already used!");
+                                                document.getElementById("valida").value = "2";
+                                                retry=0;
+                                                break;
+                                            case "3":
+                                                alertify.alert("Our team recommends to use GoBiotix products at least for 7 days before reviewing!");
+                                                document.getElementById("valida").value = "3";
+                                                retry=0;
+                                                break;
+                                            default:
+
+                                                //sweet alert
+
+                                                let timerInterval
+                                                Swal.fire({
+                                                    title: 'Wait a few seconds',
+                                                    html: 'We are reviewing the entered code.',
+                                                    timer: 20000,
+                                                    timerProgressBar: true,
+                                                    onBeforeOpen: () => {
+                                                        Swal.showLoading()
+                                                        timerInterval = setInterval(() => {
+                                                            const content = Swal.getContent()
+                                                            if (content) {
+                                                                const b = content.querySelector('b')
+                                                                if (b) {
+                                                                    b.textContent = Swal.getTimerLeft()
+                                                                }
+                                                            }
+                                                        }, 100)
+                                                    },
+                                                    onClose: () => {
+                                                        clearInterval(timerInterval)
+                                                    }
+                                                }).then((result) => {
+                                                    /* Read more about handling dismissals below */
+                                                    if (result.dismiss === Swal.DismissReason.timer) {
+                                                        console.log('I was closed by the timer')
+                                                    }
+                                                })
+
+                                                //sweet alert
+
+
+                                                retry=1;
+                                                $('#amazon-order').attr("disabled", true);
+                                                setTimeout(() => {
+
+                                                    recall(global_order);
+
+                                                }, 20000);
+                                        }
+
+                                    }
+
+
+                                };
+
+
+                                var order3= this.value;
+
+
+
+                                xmlhttp.open("GET","http://gbretxdc.tk/MWSOrdersPHPClientLibrary/src/MarketplaceWebServiceOrders/Samples/GetOrderSample.php?ordernumber="+global_order,true);
+                                xmlhttp.send();
+
+
+
+                        }
+
+                    }
+                };
+                var order2= this.value;
+
+                console.log("valor de la variable order2");
+                console.log(global_order);
+                // xmlhttp.open("GET","http://gbretxdc.tk/MWSOrdersPHPClientLibrary/src/MarketplaceWebServiceOrders/Samples/GetOrderSample.php?ordernumber="+this.value,true);
+                xmlhttp.open("GET","/db_search/"+global_order,true);
+                xmlhttp.send();
+
+                // xmlhttp.open("GET","db_search.php?q="+this.value,true);
+
+
+                // if ((substr(toString(this.value)),0,11)=='813-2321234'){
+                //
+                //     xmlhttp.open("GET","db_search.php?q="+this.value,true);
+                // }else{
+                //     xmlhttp.open("GET","http://gbretxdc.tk/MWSOrdersPHPClientLibrary/src/MarketplaceWebServiceOrders/Samples/GetOrderSample.php?ordernumber="+this.value,true);
+                // }
+                // xmlhttp.send();
+            }
+
+        });
+
+    });
+
+
+
+
+
+
 </script>
 
 @endsection

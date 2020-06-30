@@ -6,6 +6,7 @@ use App\Notifications\first_step;
 use Illuminate\Http\Request;
 use App\Aiwellness;
 use Illuminate\Support\Facades\Notification;
+use App\Order;
 //use App\Notifications\first_step;
 
 class IndexController extends Controller
@@ -33,11 +34,11 @@ class IndexController extends Controller
         Notification::route('mail', 'jose@mvagency.co')
             ->notify(new first_step()); //EMAIL FOR JOSE
 
-        Notification::route('mail', 'diego@mvagency.co')
-            ->notify(new first_step()); //EMAIL FOR DIEGO
+//        Notification::route('mail', 'diego@mvagency.co')
+//            ->notify(new first_step()); //EMAIL FOR DIEGO
 
-        Notification::route('mail', 'ariel@mvagency.co')
-            ->notify(new first_step()); //EMAIL FOR ARIEL
+//        Notification::route('mail', 'ariel@mvagency.co')
+//            ->notify(new first_step()); //EMAIL FOR ARIEL
 
         return view('review')->with('review',$review);
 
@@ -82,6 +83,36 @@ class IndexController extends Controller
         $request->session()->forget('order');
 
         return view('thank');
+
+    }
+
+    public function db_search($order_id){
+
+
+        $consulta=Order::where('Code',$order_id)->first();
+
+
+
+        if($consulta!=null){
+            $fechaactual =date('Y-m-d');
+            $fechastamp=strtotime($fechaactual);
+            $orderdate=strtotime($consulta->CodeDate);
+            $result=$fechastamp-$orderdate;
+
+            if ($consulta->Claimed==1){
+                echo "2";
+            }
+            else{
+                if ($result>=604800){
+                    echo"0";
+                }else{
+                    echo "3";
+                }
+            }
+        }else{
+            echo "1";
+        }
+
 
     }
 }

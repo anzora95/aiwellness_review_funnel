@@ -36,7 +36,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/data', 'HomeController@index');
-
+Route::get('/db_search/{order_id}','IndexController@db_search');
 
 Route::middleware(['auth'])->group(function (){
 
