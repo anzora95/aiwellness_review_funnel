@@ -227,7 +227,7 @@ p.subtittle1{
 .button12 {
 
     /*margin-bottom: 10px;*/
-    width: 45%;
+    width: 60%;
     background-color: #E6282B;
     height: 10%;
     color: #fff;
@@ -345,6 +345,15 @@ i.fa-check-circle{
 /*Mobil version*/
 
 @media only screen and (max-width: 600px) {
+    .button12 {
+
+        /*margin-bottom: 10px;*/
+        width: 80%;
+        height: 70px;
+    }
+    #administrative_area_level_1{
+
+    }
     .spacer-desktop{
         display: none;
     }

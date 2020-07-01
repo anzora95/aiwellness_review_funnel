@@ -16,7 +16,16 @@
 
 
     <div class="container-fluid" style="padding: 30px 0px 0px 0px; background-color: #FFF;">
-
+{{--        <div class="container">--}}
+{{--            <div class="row"  style="">--}}
+{{--                <div class="col-lg-12" style="text-align: left">--}}
+{{--                    <h2 class="" style="color: #000000; font-weight: 500; font-size: 30px; padding-top: 0px; margin-bottom: 20px; font-family: 'Montserrat','sans-serif';">Thank You for Your Review</h2>--}}
+{{--                    <!-- <p class="text-center sans" style="color: #FFF;  font-weight: 700;font-size: 35px;">PLEASE SHARE YOUR REVIEW ON AMAZON</p> -->--}}
+{{--                    <p class="" style="color: #000000; font-size: 15px; font-family: 'Montserrat','sans-serif'; font-weight: normal;">Sharing your review helps us pursue our mission to develop the best--}}
+{{--                        <br> natural supplements products possible.*</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-sm-12">
@@ -47,10 +56,10 @@
                                 <input style="width:100%;" type="text" name="lName" class="amazon2 underline" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '').replace(/(\.*)\./g, '$1');" id="lName" placeholder="Last Name" required>
                             </div>
                         </div>
-                        <input style="width:100%;" type="text" name="email" class="amazon2 underline" id="amazon-ordermail" placeholder="Email" required>
+                        <input style="width:100%;" type="text" name="email" class="amazon2 underline" id="amazon-ordermail" placeholder="Your Email Address" required>
 
-                        <input style="width:100%;" type="text" id="sAddress1" name="sAddress1" class="amazon2 underline"  placeholder="Address 1" required>
-                        <input style="width:100%;" type="text" name="sAddress2" class="amazon2 underline" id="amazon-order" placeholder="Addres 2" required>
+                        <input style="width:100%;" type="text" id="sAddress1" name="sAddress1" class="amazon2 underline"  placeholder="Street Address" required>
+                        <input style="width:100%;" type="text" name="sAddress2" class="amazon2 underline" id="amazon-order" placeholder="Address Line 2" required>
                         <input style="width:100%;" type="text" id="route" name="route" class="amazon2 underline"  placeholder="Route" title="Add unit number if applicable" data-toggle="tooltip" data-placement="top" rel="txtTooltip" hidden>
                         <input style="width:100%;" type="text" id="street_number" name="stree_number" class="amazon2 underline"  placeholder="Street Number " title="Add unit number if applicable" data-toggle="tooltip" data-placement="top" rel="txtTooltip" hidden>
 
@@ -58,21 +67,21 @@
                             <div class="col-md-6">
                                 <input style="width:100%;" type="text" name="city" class="amazon2 underline" id="locality" placeholder="City">
                             </div>
-                            <div class="col-md-2">
-                                <input id="administrative_area_level_1" name="state" class="amazon2 underline" placeholder="State" style="padding-bottom:1px;  max-width:100%;" required>
+                            <div class="col-6 col-md-2">
+                                <input id="administrative_area_level_1" name="state" class="amazon2 underline" placeholder="State" style="padding-bottom:1px;  width:100%;" required>
 
                                     {{--                        <?php include("src/includes/states.php");?> <!--Lista de Estados (src/includes/states)-->--}}
 
                                 </input>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-6 col-md-4">
                                 <input  style="width:100%;" type="text" name="zip" class="amazon2 underline" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\.*)\./g, '$1');"  id="postal_code" pattern=".{5,5}"maxlength="5" placeholder="Zip"required>
                             </div>
                         </div>
                         <!-- <input  type="submit" name="send" value="Submit" required/> -->
 
                         <div class="text-center">
-                            <button class="button12 text-center">Send My Free Sample</button>
+                            <button class="button12 text-center">Send My Free Sample <i class="fa fa-long-arrow-right" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i></button>
                         </div>
 
 
