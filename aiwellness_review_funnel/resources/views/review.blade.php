@@ -41,7 +41,7 @@
 @section('content')
     <br>
     <br>
-    <form action="/shipping" method="post">
+    <form action="/shipping" method="post" >
         @csrf
     <div class="container" style="padding-top: 0px; padding-bottom: 0px;margin-top:-40px;">
         <div class="row"  style="">
@@ -130,6 +130,8 @@
         <!-- End of 3 Buttons -->
     <p class="text-center " style="font-size: 13px; margin-top: 10px;">*Optional - Not mandatory to claim your free sample</p>
     <!-- FORM END -->
+
+
 
 
 @endsection
