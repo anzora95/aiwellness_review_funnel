@@ -305,7 +305,7 @@ i.fa-check-circle{
 .form-question{
 
     font-family: "Montserrat","sans-serif";
-    font-size: large;
+    font-size: x-large;
 
 }
 .form-overall{
@@ -323,8 +323,44 @@ i.fa-check-circle{
     padding: 30px 0 30px 0;
 
 }
+
+/*IPAD*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+    #creatine-bottle{
+        width: 50% !important;
+    }
+    .button25 {
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        margin: 25px;
+        width: 50%;
+        height: 75px;
+        color: #fff;
+        background-color: #E6282B ;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        border: 0px solid transparent;
+    }
+
+    #logo-header{
+        width: 25% !important;
+    }
+    #shape-mobil{
+        margin-top: -442px !important;
+    }
+    #index-banner{
+        display: none !important;
+    }
+    #banner-mobil{
+        display: inline !important;
+    }
+}
 /*Desktop and ipad*/
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1025px){
+    .mobil-spacer{
+        display: none;
+    }
     #banner-mobil{
         display: none !important;
     }
@@ -345,6 +381,12 @@ i.fa-check-circle{
 /*Mobil version*/
 
 @media only screen and (max-width: 600px) {
+    .form-question{
+
+        font-family: "Montserrat","sans-serif";
+        font-size: 20px;
+
+    }
     .button12 {
 
         /*margin-bottom: 10px;*/
@@ -357,6 +399,7 @@ i.fa-check-circle{
     .spacer-desktop{
         display: none;
     }
+
     .form-overall{
 
         font-family: "Montserrat","sans-serif";
@@ -399,6 +442,10 @@ font-size: 40px;
         font-size: 20px;
         border: 0px solid transparent;
     }
+}
+
+.buttonselect{
+    margin-top: 10px !important;
 }
 
 .py-4{

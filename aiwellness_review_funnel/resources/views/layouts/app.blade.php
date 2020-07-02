@@ -16,6 +16,7 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -30,7 +31,7 @@
 </head>
 
 
-<body>
+<body style="background-color: #ffffff;">
     <div id="app">
 {{--        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">--}}
 {{--            <div class="container">--}}
@@ -85,7 +86,7 @@
 
         @yield('banner')
 
-        <main class="py-4">
+        <main class="py-4" style="background-color: #ffffff;">
             @yield('content')
             @yield('footer')
         </main>

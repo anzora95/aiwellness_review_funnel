@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 @stop
 
@@ -81,9 +82,9 @@
     <br>
     <div class="container">
     <div class="text-center">
-        <h4 class="form-question text-center">
+        <h3 class="form-question text-center">
             What is your Amazon order #?
-        </h4>
+        </h3>
         <div class="form-group text-center">
             <input style="max-width:100%;"   type="text" name="order" class="text-center amazon " id="amazon-order" placeholder="___-_______-______" maxlength="17" required>
 
@@ -107,51 +108,36 @@
             <section>
 
                 <label for="star-1"> <svg width="10%" id="star1" onclick="ani1()" height="10%" style="fill:#eeeeee;" viewBox="0 0 51 48">
-                        <path  d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                        <path  d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" stroke="#e6282b"/>
                     </svg> </label>
                 <label for="star-2"> <svg width="10%" id="star2" onclick="ani2()" height="10%" style="fill:#eeeeee;" viewBox="0 0 51 48">
-                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" stroke="#e6282b"/>
                     </svg> </label>
                 <label for="star-3"> <svg width="10%" id="star3" onclick="ani3()" height="10%" style="fill:#eeeeee;" viewBox="0 0 51 48">
-                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" stroke="#e6282b"/>
                     </svg> </label>
                 <label for="star-4"> <svg width="10%" id="star4" onclick="ani4()" height="10%" style="fill:#eeeeee;" viewBox="0 0 51 48">
-                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" stroke="#e6282b"/>
                     </svg> </label>
                 <label for="star-5"> <svg width="10%" id="star5" onclick="ani5()" height="10%" style="fill:#eeeeee;" viewBox="0 0 51 48">
-                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" stroke="#e6282b"/>
                     </svg> </label>
                 <!-- <label for="star-null"> Clear </label> -->    <!-- Esto es para reset las estrellas -->
 
             </section>
             <!-- End Start System -->
-
             <br>
             <br>
-
             <p class="text-center" style="padding-top:0px; color: #333333;font-weight:300; font-size: 22px; font-family: 'Montserrat','sans-serif'">Tell us about your experience with the product. <br>Please include details about how it's benefiting you.</p>
-
             <div class="text-center">
                 <textarea id="txtarea" name="review" class="textareastyle" rows="10" style="margin-top:5px; max-width:100%; width:595px;" required></textarea>
             </div>
-
-            <br>
-            <br>
-
-            <p class="text-center" >
-
+            <p class="text-center" style="margin-top: 16px;">
                 <button  id="two"class="button25 text-center" onclick="reboot()">Get My FREE Creatine <i class="fa fa-long-arrow-right" aria-hidden="true" style="margin-left: 10px; font-size: 24px"></i> </button>
             </p>
-
-
         </div>
-
     </div>
-
 {{--</form>--}}
-
-
-
 <script>
 
 
